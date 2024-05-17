@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>jQuery carousel plugin - DEMO #4</title>
+
+	<!-- css -->
+	<link type="text/css" media="all" href="../../css/main.css" rel="stylesheet" />
+	<link type="text/css" media="all" href="../../css/carousel.css" rel="stylesheet" />
+	<link type="text/css" media="all" href="../../css/font-awesome.min.css" rel="stylesheet" />
+
+	<!-- js -->
+	<script type="text/javascript" src="../../js/jquery-1.11.3.min.js"></script>
+	<script type="text/javascript" src="../../js/carousel.js"></script>
+</head>
+
+<body>
+	<div class="container">
+		<div class="whitebox">
+			<div id="breadcrumbs">
+				&lt;&lt;&nbsp;<a href="../../index.html" title="Accordion DEMO index">DEMO index</a>
+			</div>
+			<h1>Carousel plugin - DEMO #4</h1>
+			<p>
+				Below is a demo of the jQuery infinite-scrolling carousel plugin from the public GitHub project found here: <a href="https://github.com/mlmedia/carousel" title="jQuery Carousel plugin on GitHub" target="_blank">https://github.com/mlmedia/carousel</a>.
+			</p>
+			<p>
+				The combined CSS for all of the demos can be viewed here: <a href="../../css/carousel.css" title="Carousel demo">/demo/carousel/css/carousel.css</a>
+			</p>
+			<hr />
+			<div id="carousel-4" class="clearfix">
+				<a href="#" class="control prev"><i class="fa fa-chevron-left"></i></a>
+				<a href="#" class="control next"><i class="fa fa-chevron-right"></i></a>
+				<div class="slide_window clearfix">
+					<div class="slide">
+						<img src="../../images/sample-image-800x400-1.jpg" alt="" />
+					</div>
+					<div class="slide">
+						<img src="../../images/sample-image-800x400-2.jpg" alt="" />
+					</div>
+					<div class="slide">
+						<img src="../../images/sample-image-800x400-3.jpg" alt="" />
+					</div>
+					<div class="slide">
+						<img src="../../images/sample-image-800x400-4.jpg" alt="" />
+					</div>
+					<div class="slide">
+						<img src="../../images/sample-image-800x400-5.jpg" alt="" />
+					</div>
+				</div>
+			</div>
+			<script type="text/javascript">
+				/* define $ as jQuery just in case */
+				(function($) {
+					/* doc ready */
+					$(function() {
+						/* init the plugin */
+						$('#carousel-4').carousel();
+					});
+				})(jQuery);
+
+			</script>
+			<hr />
+			<p>
+				<i>All public domain images are courtesy of <a href="https://commons.wikimedia.org/wiki/Main_Page" title="Wikimedia Commons" target="_blank">Wikimedia Commons</a>.</i>
+			</p>
+		</div>
+	</div>
+</body>
+
+</html>

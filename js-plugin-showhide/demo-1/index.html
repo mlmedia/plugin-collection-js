@@ -1,0 +1,56 @@
+<html>
+
+<head>
+	<title>jQuery Demo 1</title>
+	<script type="text/javascript" language="javascript" src="//code.jquery.com/jquery-1.6.2.min.js"></script>
+</head>
+
+<body>
+	<style type="text/css">
+		a#trigger {
+			display: inline-block;
+			background: yellow;
+			margin: 10px;
+			padding: 10px;
+			border: 1px solid orange;
+		}
+
+		#target {
+			display: none;
+			width: 400px;
+			background: lightblue;
+			border: 1px solid blue;
+			margin: 10px;
+			padding: 10px;
+		}
+		.back-link {
+			font-size: 1.25rem;
+			margin-bottom: 1rem;
+			display: block;
+			text-decoration: none;
+		}
+
+	</style>
+
+	<div id="content">
+
+		<script type="text/javascript">
+			$(document).ready(function() {
+				$('a#trigger').click(function() {
+					$('div#target').toggle();
+					return false;
+				});
+			});
+
+		</script>
+		<a class="back-link" href="/news/tutorial-jquery-showhide-basics/" title="Tutorial: jQuery show/hide basics"><< Back to Tutorial: jQuery show/hide basics</a>
+
+		<a href="#" id="trigger">Show the target DIV</a>
+		<div id="target">
+			<p>This is the hidden div with the content you want to show or hide.</p>
+		</div>
+
+	</div>
+</body>
+
+</html>
